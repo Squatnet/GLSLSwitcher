@@ -2,9 +2,13 @@
 #include "ofApp.h"
 
 //========================================================================
-int main( ){
-	ofAppGlutWindow window;
-	ofSetupOpenGL(1366,768,OF_WINDOW);			// <-------- setup the GL context
+int main()
+{
+	ofGLFWWindowSettings settings;
+	settings.setGLVersion(2, 1);
+	settings.width = 1024;
+	settings.height = 768;
+	ofCreateWindow(settings);
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

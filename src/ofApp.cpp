@@ -1,5 +1,6 @@
 #include "ofApp.h"
 #include <dirent.h>
+
 void ofApp::setup() {
 	int bufferSize = 256;
 
